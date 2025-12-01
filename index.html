@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Portfolio of Jad Khalil</title>
+	<meta name="description" content="Jad Khalil's portfolio! " />
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#">Jad Khalil</a>
+			
+			<!-- Desktop Navigation -->
+			<nav class="nav-links" aria-label="Primary">
+				<a href="#hero">Home</a>
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#extracurricular">Extracurricular</a>
+				<a href="#education">Education</a>
+				<a href="#experience">Experience</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			
+			<!-- Mobile controls -->
+			<div class="mobile-controls">
+				<button id="themeToggle" class="btn icon-btn mobile-theme-btn" aria-pressed="false" title="Toggle theme">☾</button>
+				<button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+					<span class="hamburger"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mobile Navigation Overlay -->
+	<div class="nav-overlay" id="navOverlay"></div>
+	
+	<!-- Mobile Navigation Drawer -->
+	<nav id="mainNav" class="nav-drawer" aria-label="Mobile navigation" aria-hidden="true">
+		<div class="nav-drawer-content">
+			<button id="navClose" class="nav-close" aria-label="Close menu" title="Close">✕</button>
+			<div class="nav-menu">
+				<a href="#hero">Home</a>
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#extracurricular">Extracurricular</a>
+				<a href="#education">Education</a>
+				<a href="#experience">Experience</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section id="hero" class="hero" data-bg="waves">
+			<div class="section-bg" aria-hidden="true"></div>
+			<canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+			<div class="container hero-inner">
+				<div class="hero-text">
+					<h1>Hi, I'm <span class="accent">JAD KHALIL</span></h1>
+					<p class="lead">Computer Scientist • Software Engineer • Mobile App Developer</p>
+					<p class="typing">I build <span id="typed"></span><span class="cursor">|</span></p>
+					<div class="hero-ctas">
+						<a class="btn" href="#projects">See Projects</a>
+						<a class="btn ghost" href="#contact">Get in touch</a>
+					</div>
+				</div>
+				<div class="hero-art">
+					<!-- Stewie character -->
+					<div class="character" aria-hidden="true" tabindex="0">
+						<img src="assets/stewie.png" alt="Stewie character" class="character-img">
+						<div class="character-msg" role="status" aria-hidden="true">Shake me like a British nanny!</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="section" data-bg="grid">
+			<div class="section-bg" aria-hidden="true"></div>
+			<div class="container">
+				<h2>About</h2>
+				<p>I am a Computer Science student with strong foundations in programming, data analysis, and software development. Experienced in teamwork centered environments and motivated by problem solving, accuracy, and efficiency. Well versed in Flutter development, data structures, and science-based analytical thinking.</p>
+				<div class="about-grid">
+					<div>
+						<h3>Interests</h3>
+						<p>Flutter development, data structures, artificial intelligence, software engineering, and mobile app development</p>
+					</div>
+				</div>
+
+				<div class="about-bio">
+					<h3>Bio</h3>
+					<p>watch this video and listen to Jad-a-Roo, a new character from the show Boy Friends, narrating Jad Khalil's bio as his own!</p>
+				</div>
+
+				<div class="about-video">
+					<div class="video-wrap">
+						<video id="aboutVideo" controls preload="metadata" poster="assets/videopic.png" aria-label="About video">
+							<source src="assets/videos.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<button id="videoPlayOverlay" class="video-overlay" aria-hidden="false">Play</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="section" data-bg="dots">
+			<div class="section-bg" aria-hidden="true"></div>
+			<div class="container">
+				<h2>Skills</h2>
+				<div class="skills-grid">
+					<div class="skill">
+						<div class="skill-title">Flutter Development</div>
+						<div class="skill-bar" data-skill="92"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Data Structures and Algorithms</div>
+						<div class="skill-bar" data-skill="88"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Python / C++</div>
+						<div class="skill-bar" data-skill="90"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Firebase & SQL</div>
+						<div class="skill-bar" data-skill="75"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Software Engineering</div>
+						<div class="skill-bar" data-skill="80"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Git/Github</div>
+						<div class="skill-bar" data-skill="45"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Assembly</div>
+						<div class="skill-bar" data-skill="60"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">SQLite</div>
+						<div class="skill-bar" data-skill="65"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">C#</div>
+						<div class="skill-bar" data-skill="70"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">HTML/CSS/JS</div>
+						<div class="skill-bar" data-skill="45"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Adaptability</div>
+						<div class="skill-bar" data-skill="96"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Time Management</div>
+						<div class="skill-bar" data-skill="93"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Problem Solving</div>
+						<div class="skill-bar" data-skill="90"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Communication</div>
+						<div class="skill-bar" data-skill="90"><div class="skill-fill"></div></div>
+					</div>
+					<div class="skill">
+						<div class="skill-title">Teamwork</div>
+						<div class="skill-bar" data-skill="97"><div class="skill-fill"></div></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="section" data-bg="grid">
+			<div class="section-bg" aria-hidden="true"></div>
+			<div class="container">
+				<h2>Projects</h2>
+				<div class="projects-grid">
+					<article class="card project" data-category="systems" tabindex="0" data-title="Money Tracker App" data-desc="Developed a mobile app using Flutter to help users track expenses, income, and monthly spending patterns. Integrated Firebase Firestore for real time data syncing. Implemented categorized transaction logging, editable entries, and daily summaries with clean UI." data-stack="Flutter, Dart, Firebase.">
+						<div class="card-body">
+							<h3>Money Tracker App</h3>
+							<p>A mobile app built with Flutter to track expenses, income, and monthly spending patterns. Features Firebase Firestore integration, categorized transactions, and spending analytics.</p>
+							<div class="card-tags"><span>Flutter</span> <span>Firebase</span></div>
+						</div>
+						<div class="card-actions">
+							<button class="btn open-project">Details</button>
+						</div>
+					</article>
+
+					<article class="card project" data-category="web" tabindex="0" data-title="FrogBob Mips Assembly Game" data-desc="Developed a 2D game in MIPS Assembly where a frog character navigates through SpongeBob themed maps to collect targets. Features include keyboard controls (WASD movement), real time score tracking, win screen with music, and menu system. Built collaboratively to demonstrate low-level programming and game development concepts." data-stack="Mips, Assembly, Mars Simulator, Collaborative Programming.">
+						<div class="card-body">
+							<h3>FrogBob Mips Assembly Game</h3>
+							<p>A 2D game built in MIPS Assembly featuring a frog character navigating through SpongeBob-themed locations. Players collect targets using keyboard controls (WASD) with score tracking and win screen animations.</p>
+							<div class="card-tags"><span>Mips</span> <span>Game development</span></div>
+						</div>
+						<div class="card-actions">
+							<button class="btn open-project">Details</button>
+						</div>
+					</article>
+
+					<article class="card project" data-category="algorithms" tabindex="0" data-title="Airline Reservation System" data-desc="Developed a comprehensive airline management system in C++ that handles flight bookings, passenger check in, and boarding operations. Implemented multiple data structures including lists, queues, stacks, and maps for efficient passenger management. Integrated binary search algorithm for fast flight lookups. Collaborative project demonstrating practical application of data structures in real-world scenarios." data-stack="C++, Data Structures & Algorithms, Collaborative Programming.">
+						<div class="card-body">
+							<h3>Airline Reservation System</h3>
+							<p>A comprehensive airline management system built in C++ implementing flight bookings, passenger check in, and boarding management using advanced data structures and algorithms.</p>
+							<div class="card-tags"><span>C++</span> <span>Data Structures & Algorithms</span></div>
+						</div>
+						<div class="card-actions">
+							<button class="btn open-project">Details</button>
+						</div>
+					</article>
+
+					<article class="card project picture-card" data-category="showcase" tabindex="0" data-title="The Big Five Test" data-desc="This was the first assignment of ENL 231 course." data-stack="—Big Five Test.">
+						<img src="assets/project1.jpeg" alt="Project screenshot 1" class="project-img">
+						<div class="card-actions">
+							<button class="btn open-project">Details</button>
+						</div>
+					</article>
+					<article class="card project picture-card" data-category="showcase" tabindex="0" data-title="Learning Style Graphic" data-desc="This was assignment 1.13 of ENL 231 course." data-stack="—Visual Learner.">
+						<img src="assets/project2.jpeg" alt="Project screenshot 2" class="project-img">
+						<div class="card-actions">
+							<button class="btn open-project">Details</button>
+						</div>
+					</article>
+					<article class="card project picture-card" data-category="showcase" tabindex="0" data-title="Communication Comic Strip" data-desc="This was assignment 2.8 of ENL 231 course." data-stack="— Bad communication vs Good communication.">
+						<img src="assets/project3.jpeg" alt="Project screenshot 3" class="project-img">
+						<div class="card-actions">
+							<button class="btn open-project">Details</button>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="extracurricular" class="section" data-bg="dots">
+			<div class="section-bg" aria-hidden="true"></div>
+			<div class="container">
+				<h2>Extracurricular</h2>
+				<ul class="extras-list">
+					<li class="extra"><strong>Animator at Himaya, pour l'innocence en danger (2019-2025) </strong> — Organized and led educational activities and recreational programs for children, promoting their safety, well being, and personal development through engaging workshops and events.</li>
+					<li class="extra"><strong>Animator at Safe Park Ajaltoun (2019-2025) </strong> — Facilitated child friendly activities and supervised youth programs in collaboration with Himaya NGO, creating a safe and supportive environment for children in the community.</li>
+					<li class="extra"><strong>Member of Children Municipal Council Ajaltoun (2019-2024) </strong> — Represented youth voices in local governance, participated in decision making processes affecting children and youth, and contributed to community development initiatives in Ajaltoun.</li>
+					<li class="extra"><strong>Part of Focus Group UNICEF (Sep 2019 - Oct 2019) </strong> — Led and supervised activities for children aged 8-16 during a UNICEF event organized by Himaya NGO, demonstrating leadership and responsibility at age 14 while ensuring a safe and engaging environment for participants.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="education" class="section" data-bg="waves">
+			<div class="section-bg" aria-hidden="true"></div>
+			<div class="container">
+				<h2>Education</h2>
+				<div class="edu-list">
+					<div class="edu-item"><strong>Bachelor of Science in Computer Science</strong> — Notre Dame University - Louaize (2023—2027)</div>
+					<div class="edu-item"><strong>Minor:</strong> Artificial Intelligence at Notre Dame University - Louaize (2025-2027)</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="experience" class="section" data-bg="grid">
+			<div class="section-bg" aria-hidden="true"></div>
+			<div class="container">
+				<h2>Experience</h2>
+				<div class="exp-list">
+					<div class="exp-item">
+						<strong>Waiter</strong> — Casa Di Pizza (2023-2025)
+						<p class="muted">Served 70-80 customers per shift.</p>
+						<p class="muted">Maintained over 90% order accuracy, and managed 7 tables simultaneously during peak hours..</p>
+						<p class="muted">Collaborated with an 8-member team to streamline operations.</p>
+					</div>
+					<div class="exp-item">
+						<strong>Bartender</strong> — Scappa Resort Ajaltoun (2022—2023)
+						<p class="muted">Prepared and served 100+ drinks per shift with consistent quality.</p>
+						<p class="muted">Enhanced customer engagement through personalized suggestions.</p>
+						<p class="muted">Excelled under pressure during weekend rushes.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="projectModal" class="modal" aria-hidden="true">
+			<div class="modal-overlay"></div>
+			<div class="modal-panel" role="dialog" aria-modal="true">
+				<button class="modal-close btn icon-btn" aria-label="Close">✕</button>
+				<h3 id="modalTitle">Project Title</h3>
+				<p id="modalDesc">Project description goes here.</p>
+				<p id="modalStack" class="muted">Stack: —</p>
+			</div>
+		</div>
+
+		<section id="contact" class="section" data-bg="dots">
+			<div class="section-bg" aria-hidden="true"></div>
+			<div class="container">
+				<h2>Contact</h2>
+				<div class="contact-row">
+					<div class="contact-details">
+						<div class="contact-item">
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+							</svg>
+							<div>
+								<strong>Phone:</strong> +961 71 730 525
+							</div>
+						</div>
+						<div class="contact-item">
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+								<path d="M22 6l-10 7L2 6"></path>
+							</svg>
+							<div>
+								<strong>Email:</strong> <span id="emailAddr">jadkhalil266@gmail.com</span>
+							</div>
+						</div>
+						<div class="contact-item">
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.26c0-.85.62-1.56 1.39-1.56.77 0 1.39.71 1.39 1.56v4.26h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"></path>
+							</svg>
+							<div>
+								<strong>LinkedIn:</strong> <a id="linkedinLink" href="https://www.linkedin.com/in/jadrkhalil" target="_blank" rel="noopener">Open profile</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+							</svg>
+							<div>
+								<strong>GitHub:</strong> <a id="githubLink" href="https://github.com/jadkhal12" target="_blank" rel="noopener">Open profile</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+								<circle cx="12" cy="10" r="3"></circle>
+							</svg>
+							<div>
+								<strong>Address:</strong> Rayfoun, Keserwan, Lebanon
+							</div>
+						</div>
+						<div><a id="cvLink" class="btn ghost" href="assets/JADKHALIL - CV.pdf" download>Download CV</a></div>
+					</div>
+
+					<form id="contactForm" class="contact-form">
+						<label for="name">Name</label>
+						<input id="name" name="name" required />
+						<label for="message">Message</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+						<div class="form-actions">
+							<button class="btn" type="submit">Send Email</button>
+							<button id="copyEmail" type="button" class="btn ghost">Copy Email</button>
+						</div>
+					</form>
+
+					<div class="contact-available">Available upon request</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<small><span class="footer-name">Jad Khalil</span> - © 2025</small>
+		</div>
+	</footer>
+
+	<script src="scripts/scripts.js" defer></script>
+</body>
+</html>
